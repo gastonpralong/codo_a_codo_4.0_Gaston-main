@@ -20,15 +20,14 @@ function mostrarAlerta() {
 }
 
 function validarFormulario(event) {
-    event.preventDefault();  // Evita el envío del formulario para manejarlo con JavaScript
+    console.log("HOLA");
+    event.preventDefault();  
     
     var nombre = document.getElementById('nombre').value;
     var apellido = document.getElementById('apellido').value;
     var email = document.getElementById('email').value;
     var pais = document.getElementById('pais').value;
     var frecuencia = document.querySelector('input[name="frecuencia"]:checked');
-    const suscribirseBtn = document.getElementById('suscribirseBtn');
-
 
     if (nombre === "") {
         alert("Por favor, ingrese su nombre.");
@@ -62,4 +61,5 @@ function validarFormulario(event) {
     }
 
     return true;
+
 }
