@@ -20,7 +20,6 @@ function mostrarAlerta() {
 }
 
 function validarFormulario(event) {
-    console.log("HOLA");
     event.preventDefault();  
     
     var nombre = document.getElementById('nombre').value;
